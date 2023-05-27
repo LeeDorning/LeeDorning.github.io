@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hi! 
+title: About This Blog
 date: 2022-03-02
 categories: Home
 permalink: /AboutThisBlog
