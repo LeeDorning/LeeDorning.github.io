@@ -7,7 +7,7 @@ permalink: /aboutme/
 
 Who’s that professional looking bloke down there you ask? That is in fact me, your author, this blog’s creator, and a current cyber security engineer. I’m working hard to continue developing in my professional abilities in my free time alongside carrying out my daily work, and hopefully this blog will provide a reference point where that progress can be seen!
 
-![Lee Dorning](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/ProfilePicture.jpg?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}
+![Lee Dorning](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/ProfilePicture.jpg?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="400" }
 
 
 ### My Career So Far
