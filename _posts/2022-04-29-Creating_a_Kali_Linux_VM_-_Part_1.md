@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Creating a Kali Linux VM - Part 1 
 date: 2022-04-29
 ---
