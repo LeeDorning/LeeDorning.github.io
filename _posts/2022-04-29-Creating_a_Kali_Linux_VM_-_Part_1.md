@@ -78,9 +78,9 @@ You can see that the expected checksum matches the actual checksum of my downloa
 
 If, like me, you’re using 7-Zip, open up the software and navigate to the location of the downloaded Kali .7z file, before selecting extract. Complete the extract form including where to extract these files to and whether to add a password to the extracted files. For this example I’ve extracted the files into my downloads folder, but this clearly isn’t the best place if you’re going to be using this VM long term, so make sure to choose somewhere sensible:
 
-![Kali VM FileHash](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/KaliVmExtract.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+![Kali VM 7-zip Extract](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/KaliVmExtract.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
 
-![Kali VM FileHash](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/KaliVmExtractOptions.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+![Kali VM 7-zip Options](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/KaliVmExtractOptions.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
 
 &nbsp;
 
