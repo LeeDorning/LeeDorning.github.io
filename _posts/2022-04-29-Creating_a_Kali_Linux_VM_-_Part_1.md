@@ -4,7 +4,7 @@ title: Creating a Kali Linux VM - Part 1
 date: 2022-04-29
 ---
 
-## Getting Started
+Getting started with creating a Kali Linux VM for use while learning penetration testing.
 
 Here we go then, blog post number 1! I can’t say I ever thought I’d be much of a blogger, but inspiration has hit so let’s see how this goes. The first thing we’re going to cover is a bit of preparation for working through Hack the Box and Try Hack Me boxes; creating a Kali Linux VM and setting it up for use as a penetration testing box.
 
