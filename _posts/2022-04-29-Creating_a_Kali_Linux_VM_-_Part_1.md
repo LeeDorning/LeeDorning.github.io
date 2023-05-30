@@ -93,27 +93,27 @@ Success! We should now have a successfully extracted folder, within which there 
 
 Once you’re back in VMware, select ‘Open Virtual Machine’ and navigate through the extracted folder to find your newly created VMware virtual machine file and open that VM:
 
-![Kali VM Open VM](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/OpenVm.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+![Kali VM Open VM](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/OpenVm.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="500"}
 
 &nbsp;
 
 This will create a VM in VMware which for all intents and purpose is ready to go, but there are still a couple of tweaks you can make to get the most out of your VM. Select the VM in VMware, and open ‘Edit Virtual Machine Settings’. Once the settings window pops up, verify the following is configured:
 
-*- Memory: 4GB*
-*- Processors: 4*
-*- Hard Disk (SCSI): 80GB*
-*- Network Adaptor: NAT*=*
+*-Memory: 4GB*
+*-Processors: 4*
+*-Hard Disk (SCSI): 80GB*
+*-Network Adaptor: NAT*=*
 
 ![Kali VM Hardware Settings](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/VmHardware.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
 
 &nbsp;
 
-*- Name: Anything You Want!*
-*- Version: Debian 10.x 64-bit*
-*- Enhanced Keyboard: Use if Available*
-*- Shared Folders: Disabled*
+*-Name: Anything You Want!*
+*-Version: Debian 10.x 64-bit*
+*-Enhanced Keyboard: Use if Available*
+*-Shared Folders: Disabled*
 
-![Kali VM General Settings](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/VmSettings.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+![Kali VM General Settings](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/VmSettings.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="400"}
 
 &nbsp;
 
