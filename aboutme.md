@@ -7,7 +7,7 @@ permalink: /aboutme/
 
 Who’s that professional looking bloke down there you ask? That is in fact me, your author, this blog’s creator, and a current cyber security engineer. I’m working hard to continue developing in my professional abilities in my free time alongside carrying out my daily work, and hopefully this blog will provide a reference point where that progress can be seen!
 
-![Lee Dorning][https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/ProfilePicture.jpg?raw=true]
+![Lee Dorning](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/ProfilePicture.jpg?raw=true)
 
 ### My Career So Far
 Cyber security seems to be a field which has very few routes into your first position, with the vast majority of people normally coming from a background in helpdesk or other IT positions, rather than being truly ‘entry-level’. My career has taken a very different trajectory to that of the norm however, and hopefully can provide some hope for those who want to break into this sector.
