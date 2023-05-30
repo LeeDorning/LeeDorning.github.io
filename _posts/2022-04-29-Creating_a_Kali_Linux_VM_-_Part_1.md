@@ -43,7 +43,7 @@ While the enhanced keyboard driver isn’t required for all virtual machines, I 
 
 When you first boot up VMware after restarting your machine you should be prompted to choose to either use the software for free for non-commercial use, or to enter a license key. I’ll only be using this software for personal use, but if you have a license key then feel free to enter it here, and hit continue to open up VMware:
 
-![Vmware License Options](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/VmwareLicense.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+![Vmware License Options](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/VmwareLicense.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="200"}
 
 &nbsp;
 &nbsp;
@@ -78,9 +78,9 @@ You can see that the expected checksum matches the actual checksum of my downloa
 
 If, like me, you’re using 7-Zip, open up the software and navigate to the location of the downloaded Kali .7z file, before selecting extract. Complete the extract form including where to extract these files to and whether to add a password to the extracted files. For this example I’ve extracted the files into my downloads folder, but this clearly isn’t the best place if you’re going to be using this VM long term, so make sure to choose somewhere sensible:
 
-![Kali VM 7-zip Extract](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/KaliVmExtract.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+![Kali VM 7-zip Extract](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/KaliVmExtract.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="400"}
 
-![Kali VM 7-zip Options](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/KaliVmExtractOptions.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+![Kali VM 7-zip Options](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/KaliVmExtractOptions.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="350"}
 
 &nbsp;
 
@@ -92,3 +92,39 @@ Success! We should now have a successfully extracted folder, within which there 
 ## Opening Your Kali VM
 
 Once you’re back in VMware, select ‘Open Virtual Machine’ and navigate through the extracted folder to find your newly created VMware virtual machine file and open that VM:
+
+![Kali VM Open VM](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/OpenVm.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+
+&nbsp;
+
+This will create a VM in VMware which for all intents and purpose is ready to go, but there are still a couple of tweaks you can make to get the most out of your VM. Select the VM in VMware, and open ‘Edit Virtual Machine Settings’. Once the settings window pops up, verify the following is configured:
+
+*- Memory: 4GB*
+*- Processors: 4*
+*- Hard Disk (SCSI): 80GB*
+*- Network Adaptor: NAT*=*
+
+![Kali VM Hardware Settings](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/VmHardware.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+
+&nbsp;
+
+*- Name: Anything You Want!*
+*- Version: Debian 10.x 64-bit*
+*- Enhanced Keyboard: Use if Available*
+*- Shared Folders: Disabled*
+
+![Kali VM General Settings](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/VmSettings.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+
+&nbsp;
+
+These are the recommended settings for running a Kali VM within VMware, although the Network Adaptor can be changed to suit your use case. If you are only using this VM within a virtual home lab with no internet connection required, it is best to select ‘Internal Only’, as this will prevent any risk of your VM being seen on the internet and used by others. Since we are using this VM for HTB and THM, we will need it to have internet connection, hence the use of NAT. This does present some risk however, as these Kali VM’s are not the most secure out of the box. That isn’t an issue for this post though, I’ll be going over how best to harden this VM in my next post. 
+
+Now we’re ready to fire up our VM and log in for the first time! When you first boot up the VM you may be presented with the below pop-up, simply select ‘I copied it’ to launch the machine.
+
+![Kali VM General Settings](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/VmCopied.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+
+&nbsp;
+
+You should be passed through to the default Kali login screen, where you can login with the credentials Kali / Kali. As I mentioned earlier, enhanced keyboard allows me to type in this login screen, so if you are having issues with not being able to type in this login screen try closing the VM and altering the enhanced keyboard settings - Sometimes it needs to be required ,sometimes it needs to be turned off, and other times it needs to only be on use if required…it can be a bit of hassle but normally you can get it working.
+
+And there we have it, a shiny new Kali Linux VM ready for use! It can technically be used as is, but its best to harden your machine before using it while connected to the internet, which I’ll be covering the next post. Fingers crossed this has been useful, and I’ll see you in the next one!
