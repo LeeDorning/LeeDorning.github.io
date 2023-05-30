@@ -9,6 +9,7 @@ Who’s that professional looking bloke down there you ask? That is in fact me, 
 
 ![Lee Dorning](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/ProfilePicture.jpg?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}
 
+
 ### My Career So Far
 Cyber security seems to be a field which has very few routes into your first position, with the vast majority of people normally coming from a background in helpdesk or other IT positions, rather than being truly ‘entry-level’. My career has taken a very different trajectory to that of the norm however, and hopefully can provide some hope for those who want to break into this sector.
 
@@ -33,3 +34,5 @@ View my badges on Credly here: [Lee Dorning - Badges - Credly](https://www.credl
 Clearly my strength at the time of writing is in blue-team, with the vast majority of my work and study being based around such, however I have been conducting penetration testing sporadically through my career and red-team is something I find highly interesting. This feeds into what much of my self-learning is geared towards at the moment, including completing boxes on Try Hack Me and Hack The Box and learning to code in Python (amongst others), with the specific purpose of sitting and passing my  CREST CRT to achieve CHECK Team Member status in the coming months and years.
 
 So, there you have it, my story so far in cyber security and the goals I have for my current self-learning. I hope you enjoy your visit and the posts can provide some kind of use, even if it is just a laugh at the memes (there are going to be plenty). And on that note, I’m going to sign off with one of those memes, and I’ll see you in a post coming soon!
+
+![Lee Dorning](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/AboutMeMeme.jpg?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}
