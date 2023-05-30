@@ -35,4 +35,4 @@ Clearly my strength at the time of writing is in blue-team, with the vast majori
 
 So, there you have it, my story so far in cyber security and the goals I have for my current self-learning. I hope you enjoy your visit and the posts can provide some kind of use, even if it is just a laugh at the memes (there are going to be plenty). And on that note, I’m going to sign off with one of those memes, and I’ll see you in a post coming soon!
 
-![Lee Dorning](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/AboutMeMeme.jpg?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}
+![About Me Meme](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/AboutMeMeme.jpg?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}
