@@ -4,13 +4,13 @@ title: Creating a Kali Linux VM - Part 1
 date: 2022-04-29
 ---
 
-# Getting Started
+## Getting Started
 
 Here we go then, blog post number 1! I can’t say I ever thought I’d be much of a blogger, but inspiration has hit so let’s see how this goes. The first thing we’re going to cover is a bit of preparation for working through Hack the Box and Try Hack Me boxes; creating a Kali Linux VM and setting it up for use as a penetration testing box.
 
 Both Try Hack Me and Hack The Box use OpenVPN packages to allow connections to their boxes, and you’ll need a penetration testing box to use to connect to, and test, the boxes on these platforms, hence why in this post I’m going to be going through the motions of creating a Kali Linux Virtual Machine to use with HTB and THM.
 
-## Setting Up VMware
+### Setting Up VMware
 
 So, first thing’s first, we need to actually get set up with VMware so we have a program which we can use to build and run our VM… kind of an important step! There are a fair few different virtualisation options out there, think VirtualBox and Hyper-V, but in my personal experience VMware provides the best performance for your VM while the other options can provide some niggling issues that are difficult to overcome – I’ve had issues in the past with VirtualBox maxing out CPU on a VM as soon as Burp Suite is opened up, regardless of the specs of the host machine, which is obviously less than ideal.
 
