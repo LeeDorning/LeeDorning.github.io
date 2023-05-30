@@ -10,6 +10,8 @@ Here we go then, blog post number 1! I can’t say I ever thought I’d be much 
 
 Both Try Hack Me and Hack The Box use OpenVPN packages to allow connections to their boxes, and you’ll need a penetration testing box to use to connect to, and test, the boxes on these platforms, hence why in this post I’m going to be going through the motions of creating a Kali Linux Virtual Machine to use with HTB and THM.
 
+&nbsp;
+&nbsp;
 
 ## Setting Up VMware
 
