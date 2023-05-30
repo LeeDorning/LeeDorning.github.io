@@ -21,9 +21,9 @@ So… setting up VMware. First off, you’re going to want to get yourself over 
 
 Since we’re working in cyber security, we have to follow our own best practices, which means checking that these downloads are legitimate and haven’t been tampered with (the CIA triad has entered the chat). There isn’t a specific checksum for the installer provided on VMware’s website, but for reference I ran the following command to find the SHA-256 hash of my installer:
 
-***Get-FileHash ‘C:\Users\leedo\Downloads\VMware-player-full-16.2.3-19376536.exe*** {: style="text-align: center;"}
+***Get-FileHash ‘C:\Users\leedo\Downloads\VMware-player-full-16.2.3-19376536.exe***{: style="text-align: center;"}
 
-***C05B61E8C70FD75A4E22984C3432C1F63480239D219937D13CAD73CC41DA1E09*** {: style="text-align: center;"}
+***C05B61E8C70FD75A4E22984C3432C1F63480239D219937D13CAD73CC41DA1E09***{: style="text-align: center;"}
 
 ![Get-FileHash Screenshot](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/FileHash.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}
 
