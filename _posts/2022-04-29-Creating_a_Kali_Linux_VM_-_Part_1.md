@@ -10,7 +10,8 @@ Here we go then, blog post number 1! I can’t say I ever thought I’d be much 
 
 Both Try Hack Me and Hack The Box use OpenVPN packages to allow connections to their boxes, and you’ll need a penetration testing box to use to connect to, and test, the boxes on these platforms, hence why in this post I’m going to be going through the motions of creating a Kali Linux Virtual Machine to use with HTB and THM.
 
-### Setting Up VMware
+
+## Setting Up VMware
 
 So, first thing’s first, we need to actually get set up with VMware so we have a program which we can use to build and run our VM… kind of an important step! There are a fair few different virtualisation options out there, think VirtualBox and Hyper-V, but in my personal experience VMware provides the best performance for your VM while the other options can provide some niggling issues that are difficult to overcome – I’ve had issues in the past with VirtualBox maxing out CPU on a VM as soon as Burp Suite is opened up, regardless of the specs of the host machine, which is obviously less than ideal.
 
@@ -21,9 +22,9 @@ So… setting up VMware. First off, you’re going to want to get yourself over 
 
 Since we’re working in cyber security, we have to follow our own best practices, which means checking that these downloads are legitimate and haven’t been tampered with (the CIA triad has entered the chat). There isn’t a specific checksum for the installer provided on VMware’s website, but for reference I ran the following command to find the SHA-256 hash of my installer:
 
-***Get-FileHash ‘C:\Users\leedo\Downloads\VMware-player-full-16.2.3-19376536.exe***
+*Get-FileHash ‘C:\Users\leedo\Downloads\VMware-player-full-16.2.3-19376536.exe*
 
-***C05B61E8C70FD75A4E22984C3432C1F63480239D219937D13CAD73CC41DA1E09***
+*C05B61E8C70FD75A4E22984C3432C1F63480239D219937D13CAD73CC41DA1E09*
 
 ![Get-FileHash Screenshot](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/FileHash.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="400"}
 
@@ -39,3 +40,33 @@ When you first boot up VMware after restarting your machine you should be prompt
 
 ![Vmware License Options](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/VmwareLicense.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="250"}
 
+
+## Creating Your Kali Linux VM
+
+Step 1 complete! We have VMware installed on our machine and ready to host a virtual machine, so now let’s get that machine created and ready to use. Thankfully, Kali provides their own VM images which can be downloaded direct from their website that are almost plug and play, with just a few simple steps to get them up and running. All of the different options for Kali Linux can be found at *https://www.kali.org*, with the VMware image files we are after downloaded using the VMware option down below:
+
+![Kali VM Download](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/KaliVmDownload.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="250"}
+
+As with the installation of VMware earlier on, we need to ensure that the downloaded files have not been tampered with, and this time the Kali website does provide a checksum to compare yours to. Simply select ‘sum’ next to the VMware download button to display the current checksum, which in my case is:
+
+*424E1011DB35E20F7670B310485AB3A37556FB7A2336D261F30A358F1A4E19BE*
+
+![Kali VM SHA256](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/KaliVmSha256.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="250"}
+
+Running the same command as earlier on the downloaded file will output the checksum for the specific file downloaded to your machine, which for me outputs the following:
+
+*Get-FileHash ‘C:\Users\leedo\Downloads\kali-linux-2022.1-vmware-amd64.7z’*
+
+*424E1011DB35E20F7670B310485AB3A37556FB7A2336D261F30A358F1A4E19BE*
+
+![Kali VM FileHash](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/KaliVmFileHash.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="250"}
+
+You can see that the expected checksum matches the actual checksum of my downloaded file, so we know that this download hasn’t been tampered with and should be safe to use. Since the downloaded file isn’t yet in a usable format we need to extract the actual files from this .7z file, for which I will be using 7-Zip (*https://www.7-zip.org*), but you can use whichever is your preferred tool for this. 
+
+If, like me, you’re using 7-Zip, open up the software and navigate to the location of the downloaded Kali .7z file, before selecting extract. Complete the extract form including where to extract these files to and whether to add a password to the extracted files. For this example I’ve extracted the files into my downloads folder, but this clearly isn’t the best place if you’re going to be using this VM long term, so make sure to choose somewhere sensible:
+
+![Kali VM FileHash](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/KaliVmExtract.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="250"}
+
+![Kali VM FileHash](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/KaliVmExtractOptions.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="250"}
+
+Success! We should now have a successfully extracted folder, within which there is a ready-to-go VMware virtual machine file. Now that’s complete, it’s time to jump back into VMware and get this VM up and running!
