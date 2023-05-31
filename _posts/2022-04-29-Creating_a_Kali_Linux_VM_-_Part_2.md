@@ -16,13 +16,10 @@ Welcome back! In my previous post we covered how to get a new Kali Linux VM set 
 
 For our use case of this VM, connecting to Hack The Box and Try Hack Me over the internet, there are a number of issues presented by using Kali out of the box in its default state, including:
 
-Running the system out of date
-
-Using the default username and password built into the VM image
-
-Using a permanently administrative user account
-
-Using the default SSH keys provided with the VM image
+-Running the system out of date
+-Using the default username and password built into the VM image
+-Using a permanently administrative user account
+-Using the default SSH keys provided with the VM image
 
 Each of these presents an avenue into your box that could be exploited by an attacker that discovers your VM on the internet, if that should happen. In this post we’re going to be walking through the steps you need to take to resolve these issues and harden your Kali VM to a sensible state. These aren’t all the issues that Kali has, not even close, but they are the most important to fix, since they are the most commonly seen. It’s important as a security professional that we don’t commit the cardinal sin of opening ourselves up to attack, especially when we’re using tools such as Kali for penetration tests, but following the steps in this post should help to keep you secure, and your reputation intact.
 
