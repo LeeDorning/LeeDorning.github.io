@@ -33,7 +33,7 @@ Each of these presents an avenue into your box that could be exploited by an att
 Right then, let’s get into it. Keeping systems up to date is one of the foundations of security, and that’s no different for this VM, so updating and upgrading the system is going to be our first port of call. To do so, you’re going to want to run:
 
 ```
-sudo apt update && sudo apt upgrade
+<div align="center">sudo apt update && sudo apt upgrade<div>
 ```
 
 ![Updating and Upgrading Kali](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/UpdateAndUpgrade.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="500"}
