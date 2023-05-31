@@ -23,7 +23,7 @@ For our use case of this VM, connecting to Hack The Box and Try Hack Me over the
 
 Each of these presents an avenue into your box that could be exploited by an attacker that discovers your VM on the internet, if that should happen. In this post we’re going to be walking through the steps you need to take to resolve these issues and harden your Kali VM to a sensible state. These aren’t all the issues that Kali has, not even close, but they are the most important to fix, since they are the most commonly seen. It’s important as a security professional that we don’t commit the cardinal sin of opening ourselves up to attack, especially when we’re using tools such as Kali for penetration tests, but following the steps in this post should help to keep you secure, and your reputation intact.
 
-![Kali Hardening Meme](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/KaliHardeningMeme.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+![Kali Hardening Meme](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/KaliHardeningMeme.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="400"}
 
 &nbsp;
 &nbsp;
@@ -34,7 +34,7 @@ Right then, let’s get into it. Keeping systems up to date is one of the founda
 
 *sudo apt update && sudo apt upgrade*
 
-![Updating and Upgrading Kali](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/UpdateAndUpgrade.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+![Updating and Upgrading Kali](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/UpdateAndUpgrade.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="400"}
 
 &nbsp;
 
@@ -59,7 +59,7 @@ Okay, we’re now up to date and in a better position than where we started, but
 
 *sudo useradd -m Lee*
 
-![Add New Kali User](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/UserAdd.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+![Add New Kali User](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/UserAdd.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="500"}
 
 &nbsp;
 
@@ -67,7 +67,7 @@ This is going to create a new user with non-admin rights, while the -m flag is g
 
 *sudo passwd Lee*
 
-![Change New User Password](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/Passwd.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+![Change New User Password](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/Passwd.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="500"}
 
 &nbsp;
 
@@ -77,7 +77,7 @@ Now we’re getting somewhere, our new account is set up as a non-admin, has a s
 
 *sudo usermod -a -G sudo Lee*
 
-![Add New User Sudo Rights](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/Usermod.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+![Add New User Sudo Rights](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/Usermod.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="500"}
 
 &nbsp;
 
@@ -85,7 +85,7 @@ That’s our user account now in the sudo group, and given access to certain adm
 
 *sudo chsh /bin/bash Lee*
 
-![Set New User Terminal Shell](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/SetBashShell.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+![Set New User Terminal Shell](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/SetBashShell.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="500"}
 
 &nbsp;
 
@@ -95,7 +95,7 @@ Now we need to move on to securing the built in kali account, and the first step
 
 *sudo passwd kali*
 
-![Change Default Kali Account Password](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/PasswdKali.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+![Change Default Kali Account Password](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/PasswdKali.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="500"}
 
 &nbsp;
 
@@ -114,7 +114,7 @@ And now we’re onto our final steps of securing our Kali VM, generating new SSH
 
 *sudo mv ssh_host_\* default_kali_keys*
 
-![Removing Old SSH Keys](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/OldSshKeys.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+![Removing Old SSH Keys](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/OldSshKeys.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="500"}
 
 &nbsp;
 
@@ -124,7 +124,7 @@ Once that’s done we want to reconfigure the built in openssh-server, to genera
 
 *md5sum ssh_host_\**
 
-![Generate New SSH Keys](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/NewSshKeys.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+![Generate New SSH Keys](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/NewSshKeys.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="400"}
 
 &nbsp;
 
