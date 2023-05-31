@@ -6,6 +6,8 @@ date: 2022-04-29
 
 Getting started with creating a Kali Linux VM for use while learning penetration testing.
 
+&nbsp;
+
 ---
 
 &nbsp;
