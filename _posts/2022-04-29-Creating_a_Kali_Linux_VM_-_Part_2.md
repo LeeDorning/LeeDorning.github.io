@@ -16,14 +16,14 @@ Welcome back! In my previous post we covered how to get a new Kali Linux VM set 
 
 For our use case of this VM, connecting to Hack The Box and Try Hack Me over the internet, there are a number of issues presented by using Kali out of the box in its default state, including:
 
--Running the system out of date
--Using the default username and password built into the VM image
--Using a permanently administrative user account
--Using the default SSH keys provided with the VM image
+- Running the system out of date
+- Using the default username and password built into the VM image
+- Using a permanently administrative user account
+- Using the default SSH keys provided with the VM image
 
 Each of these presents an avenue into your box that could be exploited by an attacker that discovers your VM on the internet, if that should happen. In this post we’re going to be walking through the steps you need to take to resolve these issues and harden your Kali VM to a sensible state. These aren’t all the issues that Kali has, not even close, but they are the most important to fix, since they are the most commonly seen. It’s important as a security professional that we don’t commit the cardinal sin of opening ourselves up to attack, especially when we’re using tools such as Kali for penetration tests, but following the steps in this post should help to keep you secure, and your reputation intact.
 
-![Kali Hardening Meme](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/KaliHardeningMeme.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="400"}
+![Kali Hardening Meme](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/KaliHardeningMeme.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="500"}
 
 &nbsp;
 &nbsp;
@@ -34,7 +34,7 @@ Right then, let’s get into it. Keeping systems up to date is one of the founda
 
 *sudo apt update && sudo apt upgrade*
 
-![Updating and Upgrading Kali](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/UpdateAndUpgrade.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="400"}
+![Updating and Upgrading Kali](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/UpdateAndUpgrade.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="500"}
 
 &nbsp;
 
@@ -124,7 +124,7 @@ Once that’s done we want to reconfigure the built in openssh-server, to genera
 
 *md5sum ssh_host_\**
 
-![Generate New SSH Keys](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/NewSshKeys.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="400"}
+![Generate New SSH Keys](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/NewSshKeys.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="500"}
 
 &nbsp;
 
