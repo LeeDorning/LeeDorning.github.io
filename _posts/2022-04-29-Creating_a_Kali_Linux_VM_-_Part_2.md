@@ -115,7 +115,7 @@ And now we’re onto our final steps of securing our Kali VM, generating new SSH
 
 *sudo mkdir default_kali_keys*
 
-*sudo mv ssh_host_* default_kali_keys*
+*sudo mv ssh_host_\* default_kali_keys*
 
 ![Removing Old SSH Keys](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/OldSshKeys.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
 
@@ -125,7 +125,7 @@ Once that’s done we want to reconfigure the built in openssh-server, to genera
 
 *sudo dpkg-reconfigure openssh-server*
 
-*md5sum ssh_host_**
+*md5sum ssh_host_\**
 
 ![Generate New SSH Keys](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/NewSshKeys.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
 
