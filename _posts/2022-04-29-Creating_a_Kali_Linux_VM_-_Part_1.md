@@ -31,9 +31,10 @@ So… setting up VMware. First off, you’re going to want to get yourself over 
 
 Since we’re working in cyber security, we have to follow our own best practices, which means checking that these downloads are legitimate and haven’t been tampered with (the CIA triad has entered the chat). There isn’t a specific checksum for the installer provided on VMware’s website, but for reference I ran the following command to find the SHA-256 hash of my installer:
 
-*Get-FileHash ‘C:\Users\leedo\Downloads\VMware-player-full-16.2.3-19376536.exe*
-
-*C05B61E8C70FD75A4E22984C3432C1F63480239D219937D13CAD73CC41DA1E09*
+~~~
+Get-FileHash ‘C:\Users\leedo\Downloads\VMware-player-full-16.2.3-19376536.exe
+C05B61E8C70FD75A4E22984C3432C1F63480239D219937D13CAD73CC41DA1E09
+~~~
 
 ![Get-FileHash Screenshot](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/FileHash.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="500"}
 
@@ -64,7 +65,9 @@ Step 1 complete! We have VMware installed on our machine and ready to host a vir
 
 As with the installation of VMware earlier on, we need to ensure that the downloaded files have not been tampered with, and this time the Kali website does provide a checksum to compare yours to. Simply select ‘sum’ next to the VMware download button to display the current checksum, which in my case is:
 
-*424E1011DB35E20F7670B310485AB3A37556FB7A2336D261F30A358F1A4E19BE*
+~~~
+424E1011DB35E20F7670B310485AB3A37556FB7A2336D261F30A358F1A4E19BE
+~~~
 
 ![Kali VM SHA256](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/KaliVmSha256.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
 
@@ -72,9 +75,10 @@ As with the installation of VMware earlier on, we need to ensure that the downlo
 
 Running the same command as earlier on the downloaded file will output the checksum for the specific file downloaded to your machine, which for me outputs the following:
 
-*Get-FileHash ‘C:\Users\leedo\Downloads\kali-linux-2022.1-vmware-amd64.7z’*
-
-*424E1011DB35E20F7670B310485AB3A37556FB7A2336D261F30A358F1A4E19BE*
+~~~
+Get-FileHash ‘C:\Users\leedo\Downloads\kali-linux-2022.1-vmware-amd64.7z’
+424E1011DB35E20F7670B310485AB3A37556FB7A2336D261F30A358F1A4E19BE
+~~~
 
 ![Kali VM FileHash](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/KaliVmFileHash.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="500"}
 
