@@ -27,6 +27,9 @@ So… setting up VMware. First off, you’re going to want to get yourself over 
 
 ![Workstation Player Download](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/WorkstationPlayerDownload.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="500"}
 
+*https://www.vmware.com/uk/products/workstation-player/workstation-player-evaluation.html*
+{: style="text-align: center; font-size:75%"}
+
 &nbsp;
 
 Since we’re working in cyber security, we have to follow our own best practices, which means checking that these downloads are legitimate and haven’t been tampered with (the CIA triad has entered the chat). There isn’t a specific checksum for the installer provided on VMware’s website, but for reference I ran the following command to find the SHA-256 hash of my installer:
@@ -61,6 +64,9 @@ Step 1 complete! We have VMware installed on our machine and ready to host a vir
 
 ![Kali VM Download](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/KaliVmDownload.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
 
+*https://www.kali.org/get-kali/#kali-virtual-machines*
+{: style="text-align: center; font-size:75%"}
+
 &nbsp;
 
 As with the installation of VMware earlier on, we need to ensure that the downloaded files have not been tampered with, and this time the Kali website does provide a checksum to compare yours to. Simply select ‘sum’ next to the VMware download button to display the current checksum, which in my case is:
@@ -70,6 +76,9 @@ As with the installation of VMware earlier on, we need to ensure that the downlo
 ~~~
 
 ![Kali VM SHA256](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_1/KaliVmSha256.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+
+*https://www.kali.org/get-kali/#kali-virtual-machines*
+{: style="text-align: center; font-size:75%"}
 
 &nbsp;
 
