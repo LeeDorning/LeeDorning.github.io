@@ -25,6 +25,9 @@ Each of these presents an avenue into your box that could be exploited by an att
 
 ![Kali Hardening Meme](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Creating_a_Kali_Linux_VM_-_Part_2/KaliHardeningMeme.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="500"}
 
+*Don't do it...*
+{: style="text-align: center; font-size:75%"}
+
 &nbsp;
 &nbsp;
 
