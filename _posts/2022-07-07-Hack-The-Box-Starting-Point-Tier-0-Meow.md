@@ -1,5 +1,5 @@
 ---
-layout: Post
+layout: post
 title: Hack The Box: Starting Point Tier 0 - Meow
 date: 2022-07-07
 ---
