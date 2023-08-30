@@ -41,7 +41,7 @@ These ports are all indicative of the target device most likely being a Windows 
 /usr/bin/smbclient -L 10.129.137.226
 ~~~
 
-![Smb Client Results](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Hack%20The%20Box%20-%20Dancing/DancingSmbClient.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+![Smb Client Results](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Hack%20The%20Box%20-%20Dancing/DancingSmbClient.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="400"}
 
 &nbsp;
 &nbsp;
@@ -64,7 +64,7 @@ Now that we’re inside this share, we want to try and find where exactly the fl
 Dir
 ~~~
 
-![Dir Results](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Hack%20The%20Box%20-%20Dancing/DancingDir.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+![Dir Results](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Hack%20The%20Box%20-%20Dancing/DancingDir.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="500"}
 
 &nbsp;
 
@@ -77,7 +77,7 @@ cd ../James.P
 ls
 ~~~
 
-![Dir Results](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Hack%20The%20Box%20-%20Dancing/DancingLs.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="500"}
+![Dir Results](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Hack%20The%20Box%20-%20Dancing/DancingLs.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="600"}
 
 &nbsp;
 
