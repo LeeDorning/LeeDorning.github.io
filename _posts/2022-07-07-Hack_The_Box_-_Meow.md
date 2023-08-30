@@ -23,7 +23,7 @@ No, I don’t have a cat that just wandered across my keyboard (ahaha… ugh. th
 
 First up is getting connected to the system for the first time, which once you know how to do it is a really simple experience. Pretty much all you need to do is find the ‘connect’ button, choose the correct options and download your OpenVPN connection file:
 
-![VPN Connection](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Hack%20The%20Box%20-%20Meow/MeowVpnConnectiong.png?raw=true)){:style="display:block; margin-left:auto; margin-right:auto"}{: width="600"}
+![VPN Connection](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Hack%20The%20Box%20-%20Meow/MeowVpnConnectiong.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="600"}
 
 &nbsp;
 
@@ -82,13 +82,13 @@ ls -la
 
 My results from this command are below and you can clearly see that the flag.txt is located in the same directory that I am currently logged into as root. 
 
-![Ls -La Result](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Hack%20The%20Box%20-%20Meow/MeowLsLa.png?raw=true)){:style="display:block; margin-left:auto; margin-right:auto"}{: width="600"}
+![Ls -La Result](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Hack%20The%20Box%20-%20Meow/MeowLsLa.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="600"}
 
 &nbsp;
 
 Since we are in the same directory as this file, and from the file permissions (-rw-r—r—) we know we can read this file, it’s as simple as running cat against the file to output the flag.txt contents, which can then be submitted to the Hack The Box system to complete the box!
 
-![Ls -La Result](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Hack%20The%20Box%20-%20Meow/MeowCatFlag.png?raw=true)){:style="display:block; margin-left:auto; margin-right:auto"}{: width="600"}
+![Ls -La Result](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Hack%20The%20Box%20-%20Meow/MeowCatFlag.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="600"}
 
 &nbsp;
 
