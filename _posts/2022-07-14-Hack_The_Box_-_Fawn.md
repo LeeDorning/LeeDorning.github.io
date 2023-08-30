@@ -4,7 +4,7 @@ title: Hack The Box - Fawn
 date: 2022-07-14
 ---
 
-Write up on the box Fawn, from the Hack The Boc Starting Point - Tier 0.
+Write up on the box Fawn, from the Hack The Box Starting Point - Tier 0.
 
 &nbsp;
 
