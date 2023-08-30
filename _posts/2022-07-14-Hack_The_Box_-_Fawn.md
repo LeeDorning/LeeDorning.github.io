@@ -42,17 +42,13 @@ Since FTP is the only service we’ve found on this device, clearly that is wher
 
 ~~~
 ftp 10.129.64.9
-
 username: anonymous
-
 password: anonymous
-
 ls
-
 get flag.txt
 ~~~
 
-![Nmap Results](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Hack%20The%20Box%20-%20Fawn/FawnFlag.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="400"}
+![Nmap Results](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Hack%20The%20Box%20-%20Fawn/FawnFlag.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="500"}
 
 &nbsp;
 
