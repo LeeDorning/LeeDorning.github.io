@@ -31,7 +31,7 @@ nmap -Pn -T4 -p- -v 10.129.137.226 -oN NmapTcpAllPorts.txt
 
 This time the target box gives back a fair few results, rather than just the single port that we saw in previous boxes:
 
-![Nmap Results](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Hack%20The%20Box%20-%20Dancing/DancingOpenPorts.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="300"}
+![Nmap Results](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Hack%20The%20Box%20-%20Dancing/DancingOpenPorts.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="250"}
 
 &nbsp;
 
@@ -64,7 +64,7 @@ Now that we’re inside this share, we want to try and find where exactly the fl
 Dir
 ~~~
 
-![Dir Results](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Hack%20The%20Box%20-%20Dancing/DancingDir.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="500"}
+![Dir Results](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Hack%20The%20Box%20-%20Dancing/DancingDir.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="600"}
 
 &nbsp;
 
@@ -77,7 +77,7 @@ cd ../James.P
 ls
 ~~~
 
-![Dir Results](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Hack%20The%20Box%20-%20Dancing/DancingLs.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="600"}
+![Dir Results](https://github.com/LeeDorning/LeeDorning.github.io/blob/main/images/Hack%20The%20Box%20-%20Dancing/DancingLs.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}{: width="700"}
 
 &nbsp;
 
